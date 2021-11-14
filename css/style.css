@@ -79,7 +79,7 @@ img {
   display: inline-block;
   background-color: var(--light-gray);
   margin-top: 4rem;
-  padding: 2rem 4rem;
+  padding: 1.5rem 4rem;
   text-transform: capitalize;
   border-radius: 3rem;
   border: 2px solid var(--light-gray);
@@ -131,6 +131,7 @@ img {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 300px);
+    border-radius: 0.5rem;
   }
 
   .card {
