@@ -1,0 +1,139 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+
+  --big-shoulders: "Big Shoulders Display", cursive;
+  --lexend: "Lexend Deca", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: var(--lexend);
+  background-color: var(--light-gray);
+}
+
+h2 {
+  color: var(--light-gray);
+  font-family: var(--big-shoulders);
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 3rem 0;
+}
+
+p {
+  color: var(--transparent-white);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 45%;
+  height: auto;
+}
+
+.card-container {
+  margin: 10rem 3rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.card {
+  padding: 5.5rem 4rem;
+}
+
+.card:nth-child(1) {
+  background-color: var(--bright-orange);
+}
+
+.card:nth-child(2) {
+  background-color: var(--dark-cyan);
+}
+
+.card:nth-child(3) {
+  background-color: var(--very-dark-cyan);
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--light-gray);
+  margin-top: 4rem;
+  padding: 2rem 4rem;
+  text-transform: capitalize;
+  border-radius: 3rem;
+  border: 2px solid var(--light-gray);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--light-gray);
+}
+
+.btn-orange {
+  color: var(--bright-orange);
+}
+
+.btn-cyan {
+  color: var(--dark-cyan);
+}
+
+.btn-dark-cyan {
+  color: var(--very-dark-cyan);
+}
+
+.attribution p {
+  font-size: 11px;
+  text-align: center;
+  color: #0c0c0c;
+  padding-bottom: 3rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 800px) {
+  img {
+    width: 30%;
+  }
+
+  .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .card-container {
+    max-width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+  }
+
+  .card {
+    grid-row: 1/1;
+  }
+}
